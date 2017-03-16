@@ -1,10 +1,12 @@
 # pymemimporter
-pymemimporter is a funny PoC that allows you to import any .pyd from memory with only pure python code (no .pyd) ! 
+pymemimporter is a funny PoC that allows you to import any .pyd from memory with only pure python code (no .pyd) !  
+
 It basically executes a shellcode with ctypes to add \_memimporter (from py2exe project) as a builtin python module :D
 
 based on Joachim Bauch's MemoryModule (https://github.com/fancycode/MemoryModule) and Didier Stevens' ShellCodeMemoryModule (https://blog.didierstevens.com/programs/shellcode/)
 
-Only implemented for python 32bit on Windows
+Only implemented for python 32bit on Windows 
+
 usage: 
 ```
 C:\Users\me\Desktop>python
@@ -21,6 +23,7 @@ Traceback (most recent call last):
 <module '_memimporter' (built-in)>
 >>>
 ```
+
 ## examples
 running example/mimikatz32.py will load from memory a mimikatz interactive shell using only .py files as dependencies
 
